@@ -26,12 +26,12 @@
                 /* <!-- heros section goes here --> */
      /* <div class="hero-section"> */
 .hero-section{
-
     width: 100%;
+    height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
+    justify-items: anchor-center ;
 }
         /* <!-- profile picture goes here --> */
 .hero-section >.profile-picture{
@@ -42,6 +42,18 @@
     border-radius: 100%;
 }
          /* <!-- profile goes here --> */
-          <div class="profile">
-            <div class="buttons">
-       
+.hero-section >.profile{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
