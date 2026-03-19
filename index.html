@@ -71,15 +71,25 @@ This version highlights your:
           </div>
      </div>
 
-     <script>
+     <script>let age = prompt("What is your age?", 18);
 
-        
-        function favoriteAnimal(animal) {
-        return animal + " is my favorite animal!"
-        }
+let welcome;
 
-        const message = favoriteAnimal('Goat')
-        console.log(message)
+if (age < 18) {
+
+  welcome = function() {
+    alert("Hello!");
+  };
+
+} else {
+
+  welcome = function() {
+    alert("Greetings!");
+  };
+
+}
+
+welcome(); // ok now
      </script>
 </body>
 </html>
