@@ -72,25 +72,22 @@ This version highlights your:
           </div>
      </div>
 
-     <script>let age = prompt("What is your age?", 18);
+     <script> 
+     
+     let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
 
-let welcome;
-
-if (age < 18) {
-
-  welcome = function() {
-    alert("Hello!");
-  };
-
-} else {
-
-  welcome = function() {
-    alert("Greetings!");
-  };
-
+for (let i = 1; i <= answer; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+    } else if ( i % 3 === 0 ) {
+        console.log("fizz");
+    } else if (i % 5 === 0) {
+        console.log("buzz");
+    } else {
+        console.log(i);
+    }
+    
 }
-
-welcome(); // ok now
      </script>
 </body>
 </html>
