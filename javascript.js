@@ -4,7 +4,7 @@ function add7(num) {
 console.log(add7(10));
 
 function  multiply( a, b ) {
-    return a * b;
+    return a * b;   
 }
 console.log( multiply( 3, 2 ));
 
@@ -14,3 +14,8 @@ function capitalize(str) {
 console.log(capitalize("abcd"));
 console.log(capitalize("ABCD"));
 console.log(capitalize("aCbD"));
+
+function lastLetter(str) {
+    return  str.slice(-1);
+}
+console.log(lastLetter("leng"));
